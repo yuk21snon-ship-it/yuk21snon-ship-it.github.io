@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Noto Sans JP",sans-serif;
+    color: #2B2A27;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* レイアウト */
+header {
+    margin: 16px auto;
+}
+p {
+    width: 89.33%;
+    margin: 0 auto;
+}
+.align-center {
+    text-align: center;
+}
+
+/* ヘッダー */
+.page-header {
+    margin-top: 16px;
+}
+.logo {
+    width: 220px;
+    line-height: 0;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 40px;
+}
+.main-nav a {
+    color: #2B2A27;
+}
+.font-english {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+}
+
+/* メイン */
+.main-visual {
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+}
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 48px;
+}
+p {
+    text-align: center;
+}
+.p1 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.p2 {
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+}
+.recipe-item div {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    vertical-align: bottom;
+}
+.btn {
+    display: inline-block;
+    font-size: 0.875rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2B2A27;
+    color: #2B2A27;
+    padding: 18px 60px;
+    margin-top: 80px;
+}
+.btn:hover {
+    color: #fff;
+    border: 1px solid #F3775F;
+    background-color: #F3775F;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+
+/* デスクトップ版 */
+@media (min-width: 768px) {
+
+    /* レイアウト */
+    header {
+        width: 78.13%;
+    }
+
+    /* ヘッダー */
+    .page-header {
+        display: flex;
+        max-width: 1000px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* メイン */
+    h2 {
+        font-size: 2rem;
+    }
+    .p2 {
+        margin-bottom: 48px;
+    }
+    .items {
+        flex-direction: row;
+    }
+    .recipe-item div {
+        flex: 1;
+    }
+    /* flexアイテムに対して使用 */
+    /* .recipe-item {
+        flex-basis: calc(100%/3);
+    } */
+}
